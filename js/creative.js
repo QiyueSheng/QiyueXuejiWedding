@@ -52,11 +52,11 @@
             location:"Biltmore 比尔迪莫庄园",
             date:"2014.09.29"
         },
-        {
-            name:"2.jpg",
-            location:"Biltmore 比尔迪莫庄园",
-            date:"2014.09.29"
-        },
+        // {
+        //     name:"2.jpg",
+        //     location:"Biltmore 比尔迪莫庄园",
+        //     date:"2014.09.29"
+        // },
         {
             name:"2_1.jpg",
             location:"Great Smoky Mountain 大雾山(冬)",
@@ -207,34 +207,70 @@
             name:"35.jpg",
             location:"San Juan 圣胡安",
             date:"2015.12.30"
-        },
-        {
-            name:"36.jpg",
-            location:"Charlotte 夏洛特",
-            date:"2016.1.23"
-        }
+        }// },
+        // {
+        //     name:"36.jpg",
+        //     location:"Charlotte 夏洛特",
+        //     date:"2016.1.23"
+        // }
     ];
 
+    // $.each(footprints,function(i,val){
+    //     $("#footprintinsertpoint").append("<div class='col-lg-4 col-sm-6'>\
+    //                                             <span class='portfolio-box'>\
+    //                                                 <div>\
+    //                                                     <span style='padding-left:20px;float:left;'>"+ val.location +"</span> <span style='padding-right:20px;float:right;'>"+ val.date +"</span>\
+    //                                                     <img src='" + publicPhotoFolder + val.name + "' class='img-responsive' alt=''>\
+    //                                                 </div>\
+    //                                                 <div class='portfolio-box-caption'>\
+    //                                                     <div class='portfolio-box-caption-content'>\
+    //                                                         <div class='project-category text-faded'>\
+    //                                                             "+ val.location +"\
+    //                                                         </div>\
+    //                                                         <div class='project-name'>\
+    //                                                             "+ val.date +"\
+    //                                                         </div>\
+    //                                                     </div>\
+    //                                                 </div>\
+    //                                             </span>\
+    //                                         </div>");
+    // });
+
     $.each(footprints,function(i,val){
-        $("#footprintinsertpoint").append("<div class='col-lg-4 col-sm-6'>\
-                                                <span class='portfolio-box'>\
-                                                    <img src='" + publicPhotoFolder + val.name + "' class='img-responsive' alt=''>\
-                                                    <div class='portfolio-box-caption'>\
-                                                        <div class='portfolio-box-caption-content'>\
-                                                            <div class='project-category text-faded'>\
-                                                                "+ val.location +"\
-                                                            </div>\
-                                                            <div class='project-name'>\
-                                                                "+ val.date +"\
-                                                            </div>\
-                                                        </div>\
-                                                    </div>\
-                                                </span>\
-                                            </div>");
+        $("#footprintinsertpoint").append("<div class='col-sm-6 col-md-4'>\
+                                            <div class='thumbnail'>\
+                                              <img src='" + publicPhotoFolder + val.name + "'>\
+                                              <div class='caption'>\
+                                                <p>"+ val.location +"</p>\
+                                                <p>"+ val.date +"</p>\
+                                              </div>\
+                                            </div>\
+                                          </div>");
     });
 
 
+    // $.each(footprints,function(i,val){
+    //     $("#footprinttimeline").append("<li>\
+    //             <div class='timeline-badge'>\
+    //               <a><i class='fa fa-circle' id=''></i></a>\
+    //             </div>\
+    //             <div class='timeline-panel'>\
+    //                 <div class='timeline-heading'>\
+    //                     <h4>"+ val.location +"</h4>\
+    //                 </div>\
+    //                 <div class='timeline-body'>\
+    //                     <img style='max-width:500px;' src='" + publicPhotoFolder + val.name + "' class='img-responsive'>\
+    //                 </div>\
+    //                 <div class='timeline-footer'>\
+    //                     <p class='text-right'>"+ val.date +"</p>\
+    //                 </div>\
+    //             </div>\
+    //         </li>");
+    // });
 
+
+    // $ ('ul#footprinttimeline li:odd').addClass('timeline-inverted');
+    // $ ('ul#footprinttimeline li:odd div a i').addClass('invert');
     
 
 })(jQuery); // End of use strict
