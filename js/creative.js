@@ -113,17 +113,6 @@
             date:"2015.4.18"
         },
         {
-            name:"13.jpg",
-            location:"Atlanta 亚特兰大",
-            date:"2015.4.18"
-
-        },
-        {
-            name:"14.jpg",
-            location:"Atlanta 亚特兰大",
-            date:"2015.4.18"
-        },
-        {
             name:"14_1.jpg",
             location:"Atlanta 亚特兰大",
             date:"2015.4.19"
